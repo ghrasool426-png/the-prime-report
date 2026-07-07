@@ -54,41 +54,29 @@ ga('send', 'pageview');
 
     <div class="collapse navbar-collapse" id="navbarMediumish">
 
-        <!-- Begin Menu -->
+  <!-- Categories Dropdown Menu -->
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Categories
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <a class="dropdown-menu-item" href="{{ site.baseurl }}/category/politics/" style="display: block; padding: .25rem 1.5rem; color: #212529; text-decoration: none;">Political</a>
+      <a class="dropdown-menu-item" href="{{ site.baseurl }}/category/sports/" style="display: block; padding: .25rem 1.5rem; color: #212529; text-decoration: none;">Sports</a>
+      <a class="dropdown-menu-item" href="{{ site.baseurl }}/category/entertainment/" style="display: block; padding: .25rem 1.5rem; color: #212529; text-decoration: none;">Entertainment</a>
+    </div>
+  </li>
 
-            <ul class="navbar-nav ml-auto">
+  <!-- About Us Link -->
+  <li class="nav-item">
+    <a class="nav-link" href="{{ site.baseurl }}/about">About Us</a>
+  </li>
 
-                {% if page.url == "/" %}
-                <li class="nav-item active">
-                {% else %}
-                <li class="nav-item">
-                {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/index.html">Blog</a>
-                </li>
-
-                <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
-                </li>
-
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/"> Docs</a>
-                </li>
-
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://www.wowthemes.net/themes/mediumish-wordpress/"><i class="fab fa-wordpress-simple"></i> WP Version</a>
-                </li>
-
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://www.wowthemes.net/themes/mediumish-ghost/"><i class="fab fa-snapchat-ghost"></i> Ghost Version</a>
-                </li>
-
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://github.com/wowthemesnet/mediumish-theme-jekyll"><i class="fab fa-github"></i> Fork on Github</a>
-                </li>
-
-                {% include search-lunr.html %}
-
-            </ul>
+  <!-- Contact Us Link -->
+  <li class="nav-item">
+    <a class="nav-link" href="{{ site.baseurl }}/contact">Contact Us</a>
+  </li>
+</ul>
+		
 
         <!-- End Menu -->
 
